@@ -401,7 +401,7 @@ cancelar= .F.
          @ nlin, 129 say "LIQUIDO:  " + Transform(nsuma1 - nsuma2, ;
             "99,999,999.99")
          nlin= nlin + 2
-         @ nlin,  0 say "TOTAL EMPLEADOS: " + Str(nempl, 7)
+         @ nlin,  0 say "TOTAL DE PENSIONES: " + Str(nempl, 7)
          nlin= nlin + 5
          @ nlin,  0 say ;
             "LA PRESENTE NOMINA AMPARA LA CANTIDAD DE: $ " + ;
@@ -409,13 +409,13 @@ cancelar= .F.
             FnConver(nsuma1 - nsuma2)
          nlin= nlin + 6
          @ nlin, 25 say ;
-            "           ELABORO                                     REVISO                                AUTORIZO"
+            "         ELABORO                                     REVISO                                AUTORIZO                               Vo.Bo."
          nlin= nlin + 3
          @ nlin, 25 say ;
-            "________________________________         __________________________________      _______________________________"
+            "________________________________         __________________________________      _______________________________      _______________________________"
          nlin= nlin + 1
          @ nlin, 25 say firmas->elaboro + " " + firmas->reviso + " " ;
-            + firmas->autorizo
+            + firmas->autorizo+ " "+ firmas->rec_hum
          nlin=nlin+1
          @ nlin,  0 say " "
          eject

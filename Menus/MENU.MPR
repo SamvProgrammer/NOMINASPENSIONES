@@ -1,6 +1,6 @@
 *       *********************************************************
 *       *                                                         
-*       * 07/05/18              MENU.MPR                12:50:42  
+*       * 08/28/18              MENU.MPR                12:55:04  
 *       *                                                         
 *       *********************************************************
 *       *                                                         
@@ -70,36 +70,36 @@ EndWith
 SET SYSMENU TO
 SET SYSMENU AUTOMATIC
 
-DEFINE PAD _58o0rj4k8 OF _MSYSMENU PROMPT "\<Procesos de Nomina" COLOR SCHEME 3 ;
+DEFINE PAD _5a60roqzl OF _MSYSMENU PROMPT "\<Procesos de Nomina" COLOR SCHEME 3 ;
 	KEY ALT+P, "" ;
 	SKIP FOR Type("_Screen.ActiveForm")=="O"
-DEFINE PAD _58o0rj4k9 OF _MSYSMENU PROMPT "Super\<vivencia" COLOR SCHEME 3 ;
+DEFINE PAD _5a60roqzm OF _MSYSMENU PROMPT "Super\<vivencia" COLOR SCHEME 3 ;
 	KEY ALT+V, "" ;
 	SKIP FOR Type("_Screen.ActiveForm")=="O"
-DEFINE PAD _58o0rj4ka OF _MSYSMENU PROMPT "\<Catálogos" COLOR SCHEME 3 ;
+DEFINE PAD _5a60roqzn OF _MSYSMENU PROMPT "\<Catálogos" COLOR SCHEME 3 ;
 	KEY ALT+C, "" ;
 	SKIP FOR Type("_Screen.ActiveForm")=="O"
-DEFINE PAD _58o0rj4kb OF _MSYSMENU PROMPT "\<Reportes" COLOR SCHEME 3 ;
+DEFINE PAD _5a60roqzo OF _MSYSMENU PROMPT "\<Reportes" COLOR SCHEME 3 ;
 	KEY ALT+R, "" ;
 	SKIP FOR Type("_Screen.ActiveForm")=="O"
-DEFINE PAD _58o0rj4kc OF _MSYSMENU PROMPT "\<Herramientas" COLOR SCHEME 3 ;
+DEFINE PAD _5a60roqzp OF _MSYSMENU PROMPT "\<Herramientas" COLOR SCHEME 3 ;
 	KEY ALT+H, "" ;
 	SKIP FOR Type("_Screen.ActiveForm")=="O"
-DEFINE PAD _58o0rj4kd OF _MSYSMENU PROMPT "\<Acerca de ..." COLOR SCHEME 3 ;
+DEFINE PAD _5a60roqzq OF _MSYSMENU PROMPT "\<Acerca de ..." COLOR SCHEME 3 ;
 	KEY ALT+A, "" ;
 	SKIP FOR Type("_Screen.ActiveForm")=="O"
-DEFINE PAD _58o0rj4ke OF _MSYSMENU PROMPT "\<Salir" COLOR SCHEME 3 ;
+DEFINE PAD _5a60roqzr OF _MSYSMENU PROMPT "\<Salir" COLOR SCHEME 3 ;
 	KEY ALT+F4, "ALT+F4" ;
 	SKIP FOR Type("_Screen.ActiveForm")=="O" ;
 	MESSAGE 'Salir del Sistema'
-ON PAD _58o0rj4k8 OF _MSYSMENU ACTIVATE POPUP procesosde
-ON PAD _58o0rj4k9 OF _MSYSMENU ACTIVATE POPUP superviven
-ON PAD _58o0rj4ka OF _MSYSMENU ACTIVATE POPUP catálogos
-ON PAD _58o0rj4kb OF _MSYSMENU ACTIVATE POPUP reportes
-ON PAD _58o0rj4kc OF _MSYSMENU ACTIVATE POPUP herramient
-ON SELECTION PAD _58o0rj4kd OF _MSYSMENU Do Form Forms\about.Scx
-ON SELECTION PAD _58o0rj4ke OF _MSYSMENU ;
-	DO _58o0rj4kf ;
+ON PAD _5a60roqzl OF _MSYSMENU ACTIVATE POPUP procesosde
+ON PAD _5a60roqzm OF _MSYSMENU ACTIVATE POPUP superviven
+ON PAD _5a60roqzn OF _MSYSMENU ACTIVATE POPUP catálogos
+ON PAD _5a60roqzo OF _MSYSMENU ACTIVATE POPUP reportes
+ON PAD _5a60roqzp OF _MSYSMENU ACTIVATE POPUP herramient
+ON SELECTION PAD _5a60roqzq OF _MSYSMENU Do Form Forms\about.Scx
+ON SELECTION PAD _5a60roqzr OF _MSYSMENU ;
+	DO _5a60roqzs ;
 	IN LOCFILE("FUENTES\MENUS\MENU" ,"MPX;MPR|FXP;PRG" ,"WHERE is MENU?")
 
 DEFINE POPUP procesosde MARGIN RELATIVE SHADOW COLOR SCHEME 4
@@ -215,7 +215,7 @@ Read Events
 
 *       *********************************************************
 *       *                                                         
-*       * _58O0RJ4KF  ON SELECTION PAD                            
+*       * _5A60ROQZS  ON SELECTION PAD                            
 *       *                                                         
 *       * Procedure Origin:                                       
 *       *                                                         
@@ -226,7 +226,7 @@ Read Events
 *       *                                                         
 *       *********************************************************
 *
-PROCEDURE _58o0rj4kf
+PROCEDURE _5a60roqzs
 *Set Sysmenu to Defa
 CLOSE All
 IF !EMPTY(Usa_Indice)
