@@ -77,9 +77,11 @@ set relation to STR(Clave,3) into PerDed
 		 ENDIF
          goto top
        	 IF sImp=0
-         	IF FIELD('F_Sobres')='F_SOBRES'
-	        	IF !EMPTY(F_Sobres)
-	        	   MESSAGEBOX('Este Sobre ya se imprimio el '+TTOC(F_Sobres)+'.',0+16,'Aviso...')
+         	IF FIELD('F_Sobres')='F_SOBRES'  OR FIELD('CORREO')='CORREO'
+	        	IF !EMPTY(F_Sobres) OR !EMPTY(CORREO)
+	        	  * MESSAGEBOX('Este Sobre ya se imprimio el '+TTOC(F_Sobres)+'.',0+16,'Aviso...')
+	        	  MESSAGEBOX('Este Sobre ya se imprimio o se envío por correo ','Aviso...')
+
 				   select MaestroNomi
 				   use
 				   select NomiNew
