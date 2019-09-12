@@ -22,7 +22,7 @@ local crutabas, cmaestro, cnomina, cdesc, cjpp
 
 CLOSE TABLES all
 CREATE TABLE &nTmp FREE ;
-      	(NOMBRE C(40),RFC C(12),;
+      	(NOMBRE C(40),RFC C(13),;
          PROYECTO C(11),CVEDESC N(3),;
          FOLIO N(5),NUMDESC N(3),;
          TOTDESC N(3),IMPORTE N(9,2),;
@@ -242,7 +242,7 @@ local crutabas, cmaestro, cnomina, cdesc, cjpp
 
 CLOSE TABLES all
 CREATE TABLE &nTmp FREE ;
-      		(NOMBRE C(50), RFC C(12), ;
+      		(NOMBRE C(50), RFC C(13), ;
          	FOLIO C(10), NUMDESC N(3), ;
          	TOTDESC N(3), IMPORTE N(7, 2), ;
          	PROYECTO C(18), DEPEND C(50), ;
